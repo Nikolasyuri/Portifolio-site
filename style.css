@@ -112,6 +112,19 @@
     background: none;
 }
 /* General Section Styling */
+section{
+    padding: 100px 0px;
+}
+.about, .services, .features{
+    font-family: 'Poppins', sans-serif;
+}
+.about .aboutcontent,
+.services .servcontent{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 section .title{
     position: relative;
     text-align: center;
@@ -142,22 +155,9 @@ section .title::after{
     transform: translateX(-50%);
 }
 /* About Section Styling */
-section{
-    padding: 100px 0px;
-}
-.about, .services{
-    font-family: 'Poppins', sans-serif;
-}
 
 .about .title::after{
     content: "Quem sou eu";
-}
-
-.about .aboutcontent{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
 }
 .about .aboutcontent .left{
     width: 45%;
@@ -200,8 +200,116 @@ section{
 }
 
 /* service section styling */
+.services{
+    color: #fff;
+    background: #111;
+}
+.services .title::before{
+    background: #fff;
+}
+.services .title::after{
+    background: #111;
+    content: "O que eu faço";
+}
+.services .servcontent .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .servcontent .card:hover{
+    background: crimson;
+    color: #fff;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+.services .servcontent .card i{
+    font-size: 50px;
+    color: crimson;
+    padding-bottom: 15px;
+    transition: color 0.3s ease
+}
+.services .servcontent .card:hover i{
+    color: #fff;
+}
+.services .servcontent .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
 
-
+/* features section styling */
+.features{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+.features .title{
+    color: #111;
+}
+.features .title::after{
+    content: "Diferenciais";
+}
+.features .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.features .carousel .card:hover{
+    background: crimson;
+}
+.features .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.features .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.features .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.features .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+.features .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
 
 
 
@@ -278,6 +386,10 @@ section{
     .about .aboutcontent .right{
         flex: 100%;
     }
+    .services .servcontent .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 
 }
 
@@ -294,6 +406,9 @@ section{
     .home .homecontent a{
         font-size: 20px;
         padding: 8px 18px;
+    }
+    .services .servcontent .card{
+        width: 100%;
     }
 }
 

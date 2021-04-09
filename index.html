@@ -9,25 +9,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/b7cea6e750.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 </head>
 <body>
    <nav class="navbar">
        <div class="max-width">
            <div class="logo"><a href="#">Portifo<span>lio.</span></a></div>
-           <ul class="menu">
-               <li><a href="#">Home</a></li>
-               <li><a href="#">About</a></li>
-               <li><a href="#">Services</a></li>
-               <li><a href="#">Skills</a></li>
-               <li><a href="#">Teams</a></li>
-               <li><a href="#">Contact</a></li>
-           </ul>
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Teams</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Services</a></li>
+                 </ul>
            <div class="menu-btn">
-             <i class="fa fa-bars"></i>
+                <i class="fa fa-bars"></i>
            </div>
        </div>
    </nav>
-
    <!--Home Section Start-->
    <section class="home" id="home">
        <div class="max-width">
@@ -39,7 +41,6 @@
            </div>
        </div>
    </section>
-  
    <!-- About Section Start -->
    <section class="about" id="about">
     <div class="max-width">
@@ -56,22 +57,22 @@
         </div>
     </div>
     </section>
-       <!-- Services Section Start -->
+    <!-- Services Section Start -->
    <section class="services" id="services">
     <div class="max-width">
         <h2 class="title">Serviços</h2>
         <div class="servcontent">
             <div class="card">
                 <div class="box">
-                    <i class="fas fa-chalkboard-teacher"></i>
-                    <div class="text">Aulas Particulares</div>
+                    <i class="fas fa-video"></i>
+                    <div class="text">Aulas Online</div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam in assumenda ut dicta adipisci dolore.</p>
                 </div>
             </div>
             <div class="card">
                 <div class="box">
-                    <i class="fas fa-video"></i>
-                    <div class="text">Aulas Online</div>
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <div class="text">Aulas Particulares</div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam in assumenda ut dicta adipisci dolore.</p>
                 </div>
             </div>
@@ -85,6 +86,42 @@
         </div>
     </div>
     </section>
-   <script src="script.js"></script>
+    <!-- Features section start -->
+    <section class="features" id="features">
+        <div class="max-width">
+            <h2 class="title">Features</h2>
+            <div class="carousel owl-carousel">
+                <div class="card">
+                    <div class="box">
+                        <img src="/assets/images/feature-1.jpg" alt="Higiene">
+                        <div class="text">Cuidados contra Covid</div>
+                        <p>Todos os cuidados com o uso de máscara e álcool em gel para prevenir o COVID19 </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="/assets/images/feature-2.jpg" alt="Higiene">
+                        <div class="text">Cuidados contra Covid</div>
+                        <p>Todos os cuidados com o uso de máscara e álcool em gel para prevenir o COVID19 </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="/assets/images/feature-3.jpg" alt="Higiene">
+                        <div class="text">Cuidados contra Covid</div>
+                        <p>Todos os cuidados com o uso de máscara e álcool em gel para prevenir o COVID19 </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="/assets/images/feature-4.jpg" alt="Higiene">
+                        <div class="text">Cuidados contra Covid</div>
+                        <p>Todos os cuidados com o uso de máscara e álcool em gel para prevenir o COVID19 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
