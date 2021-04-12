@@ -259,7 +259,7 @@ section .title::after{
     color: #111;
 }
 .features .title::after{
-    content: "Diferenciais";
+    content: "";
 }
 .features .carousel .card{
     background: #222;
@@ -331,7 +331,7 @@ section .title::after{
     background: #111;
 }
 .socialmedia .socialmediacontent .card{
-    width: calc(33% - 20px);
+    width: calc(50% - 20px);
     margin-bottom: 20px;
     text-align: center;
     background: #333;
@@ -350,6 +350,9 @@ section .title::after{
     color: crimson;
 }
 .socialmedia .socialmediacontent .card:hover i{
+    color: #fff;
+}
+.socialmedia .socialmediacontent .card a{
     color: #fff;
 }
 
