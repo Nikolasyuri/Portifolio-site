@@ -487,6 +487,30 @@ footer span a:hover{
     .home{
         background-position-x: -550px;
     }
+    .home .homecontent a:hover,
+    .about .aboutcontent .right a:hover,
+    .contact .right form .button button:hover{
+        background: crimson;
+        color: #fff;
+    }
+    .services .servcontent .card:hover,
+    .features .carousel .card:hover,
+    .features .carousel .card:hover .box,
+    .socialmedia .socialmediacontent .card:hover{
+        background: #222;
+        transform: none;
+    }
+    .socialmedia .socialmediacontent .card:hover{
+        background: #333;
+    }
+    .services .servcontent .card:hover i,
+    .socialmedia .socialmediacontent .card:hover i{
+        color: crimson;
+    }
+    .features .carousel .card:hover img{
+        border-color: crimson;
+    }
+    
 }
 
 @media (max-width: 947px){
