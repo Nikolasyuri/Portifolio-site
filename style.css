@@ -484,6 +484,9 @@ footer span a:hover{
     .max-width {
         padding: 0 50px;
     }
+    .home{
+        background-position-x: -550px;
+    }
 }
 
 @media (max-width: 947px){
@@ -551,6 +554,11 @@ footer span a:hover{
     }
 
 }
+@media (max-width: 847px){
+    .home{
+        background-position-x: -680px;
+    }
+}
 
 @media (max-width: 690px){
     .max-width {
@@ -569,6 +577,14 @@ footer span a:hover{
     .services .servcontent .card{
         width: 100%;
     }
+    .home{
+        background-position-x: -800px;
+    }
+}
+@media (max-width: 597px){
+    .home{
+        background-position-x: -875px;
+    }
 }
 
 @media (max-width: 500px){
@@ -580,5 +596,13 @@ footer span a:hover{
     }
     .socialmedia .socialmediacontent .card{
         width: 100%;
+    }
+    .home{
+        background-position-x: -1000px;
+    }
+}
+@media(max-width: 397px){
+    .home{
+        background-position-x: -1050px;
     }
 }
