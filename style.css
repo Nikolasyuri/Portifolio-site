@@ -510,7 +510,6 @@ footer span a:hover{
     .features .carousel .card:hover img{
         border-color: crimson;
     }
-    
 }
 
 @media (max-width: 947px){
