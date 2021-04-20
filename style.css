@@ -248,7 +248,23 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+.services a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: crimson;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
 
+.services a:hover {
+    color: crimson;
+    background: none;
+}
 /* features section styling */
 .features{
     color: #fff;
@@ -549,7 +565,8 @@ footer span a:hover{
     .home .homecontent .text-3 {
         font-size: 35px;
     }
-    .home .homecontent a{
+    .home .homecontent a,
+    .services a{
         font-size: 23px;
         padding: 10px 30px;
     }
@@ -593,7 +610,8 @@ footer span a:hover{
     .home .homecontent .text-3 {
         font-size: 32px;
     }
-    .home .homecontent a{
+    .home .homecontent a,
+    .services a{
         font-size: 20px;
         padding: 8px 18px;
     }
